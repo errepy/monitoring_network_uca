@@ -1,0 +1,28 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{2}{section.1}
+\contentsline {section}{\numberline {2}Marco te\IeC {\'o}rico}{2}{section.2}
+\contentsline {section}{\numberline {3}An\IeC {\'a}lisis de los resultados}{2}{section.3}
+\contentsline {subsection}{\numberline {3.1}Login HTTP}{3}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Explicaci\IeC {\'o}n}{3}{subsubsection.3.1.1}
+\contentsline {paragraph}{En la figura 1 podemos observar en verde los paquetes que se intercambian entre el servidor de sapienza ( ip 200.9.4.8) y la m\IeC {\'a}quina que utilizamos como prueba (ip 192.168.0.4 local). Al realizar el procedimiento de login, se realizan una serie de intercambios de paquetes, la mayoria de ellos de ack e informaci\IeC {\'o}n emitida y recibida por partes dentro de los envios. Al inicio se envian usuario y password no encriptado (ver figura 2).}{3}{figure.2}
+\contentsline {paragraph}{Descripci\IeC {\'o}n Paso a Paso (FIGURA 3):}{4}{section*.3}
+\contentsline {subsection}{\numberline {3.2}Login HTTPS}{5}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Explicaci\IeC {\'o}n}{5}{subsubsection.3.2.1}
+\contentsline {paragraph}{En la figura 4 observamos los paquetes intercambiados por la fuente, mi computadora, con ip (192.168.0.4 local) y el servidor web (31.13.94.38), al realizarse un login bajo el protocolo HTTPS (TLSV1.2), podemos observar a priori que el primer procedimiento que intenta realizar la fuente desde el puerto 61350 al puerto 443 del servidor es tratar de enviar la informaci\IeC {\'o}n encriptada al mismo. Podemos observar que la informaci\IeC {\'o}n que anteriormente vimos estaba pasada directamente con el LOGIN HTTP, ahora esta encriptada y se pasa a traves del protocolo TLS v 1.2 (ver figura 4)}{5}{section*.4}
+\contentsline {paragraph}{Descripci\IeC {\'o}n Paso a Paso (FIGURA 4):}{5}{section*.5}
+\contentsline {subsection}{\numberline {3.3}Consulta de un dominio DNS}{7}{subsection.3.3}
+\contentsline {paragraph}{Para realizar este procedimiento, debemos hacer ping a un dominio cualquiera, como por ejemplo google.com y ver los paquetes asociados al momento de realizar la consulta al dominio.}{7}{section*.6}
+\contentsline {subsubsection}{\numberline {3.3.1}Explicaci\IeC {\'o}n}{7}{subsubsection.3.3.1}
+\contentsline {paragraph}{La figura 5 se muestra los paquetes filtrados para la direcci\IeC {\'o}n ip de origen, la consulta en cuesti\IeC {\'o}n corresponde a un PING al dominio www.google.com }{7}{section*.7}
+\contentsline {paragraph}{En la figura 6 Podemos observar como se comporta el servidor DNS al dar una respuesta de localizaci\IeC {\'o}n de la IP del host solicitado }{8}{figure.6}
+\contentsline {subsection}{\numberline {3.4}Envio de Email}{9}{subsection.3.4}
+\contentsline {paragraph}{En este procedimiento capturaremos los paquetes al realizar un envio de email desde un cliente web de la maquina host, visto que no tenemos un servidor de correo habilitado incitu, veremos como se realiza el proceso de envio desde el cliente de correos de windows.}{9}{section*.9}
+\contentsline {subsubsection}{\numberline {3.4.1}Explicaci\IeC {\'o}n}{9}{subsubsection.3.4.1}
+\contentsline {paragraph}{Analizaremos el procedimiento de captura, primero verificando que todos los procedimientos de env\IeC {\'\i }o desde servidores web como google, microsoft, etc se realizan a trav\IeC {\'e}s de protocolos Seguros, osea, utilian TLS v.1.2 como protocolo de conexi\IeC {\'o}n socket con el servidor y asi envian la informaci\IeC {\'o}n a trav\IeC {\'e}s del canal seguro pre-establecido (Ver figura 7 - label intro). Luego Procedimos al an\IeC {\'a}lisis de los paquetes tanto enviados y recibidos, y nos dimos cuenta de que:}{9}{section*.10}
+\contentsline {subsection}{\numberline {3.5}Descarga de archivos P2P}{10}{subsection.3.5}
+\contentsline {paragraph}{En esta secci\IeC {\'o}n analizaremos los paquetes que se reciben y envian en el proceso de descarga de archivos a trav\IeC {\'e}s de la herramienta bittorrent que usa el protocolo p2p. (ver figura 8)}{10}{figure.8}
+\contentsline {subsection}{\numberline {3.6}Intercambio de paquetes para conectarse a una red wifi segura}{10}{subsection.3.6}
+\contentsline {paragraph}{Hemos realizado las capturas al conectarse a una red wifi previamente conocida. }{10}{figure.9}
+\contentsline {subsubsection}{\numberline {3.6.1}Explicaci\IeC {\'o}n}{10}{subsubsection.3.6.1}
+\contentsline {subsection}{\numberline {3.7}Intercambio de paquetes para conexion DHCP}{11}{subsection.3.7}
+\contentsline {paragraph}{Hemos mostrado en el item anterior, al conectarse a la red wifi como el protocolo DHCP funciona y que paquetes se intercambian con el host que requiere la ip.}{11}{section*.14}

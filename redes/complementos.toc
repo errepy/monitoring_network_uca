@@ -1,0 +1,8 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{2}{section.1}
+\contentsline {section}{\numberline {2}Marco te\IeC {\'o}rico}{2}{section.2}
+\contentsline {section}{\numberline {3}Planeamiento}{2}{section.3}
+\contentsline {section}{\numberline {4}An\IeC {\'a}lisis de los resultados}{2}{section.4}
+\contentsline {section}{\numberline {5}Discusiones finales}{2}{section.5}
+\contentsline {section}{\numberline {6}Conclusiones}{2}{section.6}
+\contentsline {section}{\numberline {7}Bibliograf\IeC {\'\i }a}{3}{section.7}
